@@ -1,0 +1,123 @@
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: var(--surface);
+    border-radius: 12px;
+    margin-bottom: 4rem;
+    border: 1px solid var(--border);
+}
+
+.hero-title {
+    font-size: 3rem;
+    color: var(--blue);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--text);
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+.hero-description {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    color: var(--subtext);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--blue);
+    color: var(--bg);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--pink);
+    transform: translateY(-3px);
+}
+
+.how-it-works-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.how-it-works-text ol {
+    padding-left: 2em;
+}
+
+.how-it-works-text ol li::marker {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.how-it-works-visual img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 1px solid var(--border);
+}
+
+.terms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.term-card {
+    background: var(--surface);
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.term-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--pink);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.term-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 0;
+    color: var(--green);
+}
+
+.term-card .icon {
+    font-size: 1.5rem;
+}
+
+.term-card abbr {
+    text-decoration: none;
+    border-bottom: 1px dashed var(--subtext);
+    cursor: help;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .how-it-works-container {
+        grid-template-columns: 1fr;
+    }
+}

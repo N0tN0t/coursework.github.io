@@ -1,0 +1,71 @@
+.quiz-section, .multimedia {
+    padding: 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+h1#main-title {
+    text-align: center;
+    border-bottom: 2px solid var(--blue);
+    padding-bottom: .5rem;
+}
+
+.quiz-form { max-width: 700px; margin: 0 auto; }
+.form-group { margin-bottom: 1.5rem; }
+.form-group label { display: block; margin-bottom: .5rem; color: var(--subtext); font-weight: bold; }
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: .75rem;
+    background: var(--overlay);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text);
+    font: inherit;
+    font-size: 1rem;
+    transition: .2s;
+}
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--blue);
+    box-shadow: 0 0 0 2px rgba(137, 180, 250, 0.2);
+}
+::placeholder { color: var(--subtext); opacity: .7; }
+
+.checkbox-group { display: flex; flex-direction: column; gap: .5rem; }
+.checkbox-group label { display: flex; align-items: center; font-weight: normal; cursor: pointer; }
+.checkbox-group input[type="checkbox"] { margin-right: .5rem; transform: scale(1.2); }
+
+fieldset {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+legend { color: var(--blue); font-weight: bold; padding: 0 .5rem; font-size: 1.1rem; }
+
+.form-actions { display: flex; gap: 1rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap; }
+.btn-submit, .btn-reset {
+    padding: .75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s;
+    border: none;
+}
+.btn-submit { background: var(--blue); color: var(--bg); }
+.btn-submit:hover { background: var(--green); }
+.btn-reset { background: var(--overlay); color: var(--text); border: 1px solid var(--border); }
+.btn-reset:hover { background: var(--border); }
+
+input[type="range"] { width: 100%; margin: .5rem 0; }
+#investment-value { margin-left: 1rem; color: var(--blue); font-weight: bold; }
+
+.video-container { text-align: center; }
+.video-container iframe { border: 2px solid var(--border); border-radius: 8px; max-width: 100%; }
+
+@media (max-width: 768px) {
+    .btn-submit, .btn-reset { width: 100%; margin: 0.5rem 0; }
+}
